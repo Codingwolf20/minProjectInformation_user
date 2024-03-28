@@ -1,0 +1,537 @@
+# ............................................style....
+<MyButton@Button>:
+    text: "SEND"
+    color:1,1,1,1
+    background_color:0,1,1,1
+    size_hint_max:12,19 
+    size_hint_max_y: 23
+<MyLabel@MDLabel>
+    text:"developer"
+    md_bg_color: [1,0,0,1]
+    halign:"center"
+    color:0,0,1,1   
+<MYCard@MDCard>
+    
+    spacing: '10dp'
+    orientation: 'horizontal'
+    # padding: "8dp"
+    size_hint: None,None
+    size: '88dp','180dp' 
+    md_bg_color:0,0,3,1 
+    pos: '10dp','400dp'
+
+<MYImage@Image>:
+    source: "img/mo.png"
+    # size_hint:120,120
+    pos:'70dp','700dp'
+    pos_hint: {'center_x':.5,'center_y':.55}
+<MyLabel@Label>:
+    text: "DEVELOPER"
+    color:9,0,0,15
+    bold:True
+    font_name: 'font/COOPBL.TTF'
+    font_size: 18
+# <MyBoxLayout@MDBoxLayout>:
+#     md_bg_color:1,11,0,1
+<MYImage@Image>:
+    source: "img/mo.png"
+    pos_hint: {'center_x': .2,'center_y': .50}
+<MyBoxLayout@BoxLayout>:
+    padding:"8dp"
+    orientation: 'vertical'
+    spacing:10 
+<MYGridLayout@GridLayout>:
+    rows:3
+<MyTextInput@TextInput>:
+    size_hint_max_y:55
+  
+    
+# ...........................................add widget..............
+GridLayout:
+    
+    MYCard:
+        padding:22
+        size: '280dp','280dp'
+        md_bg_color:0,3,11,11
+        rows:5
+        orientation: 'vertical'
+        pos:9,150
+        MyLabel:
+            text:"username"
+        MyTextInput:
+            id:text_input_one
+        MyLabel:
+            text:"password"
+        MyTextInput:
+            id:text_input_tow
+        MyButton:
+            on_press:app.information(self)  
+    MyLabel:
+        id:texts_color_change_one
+        pos:103,33
+        text:"Welcom"
+        font_size:15
+    MyLabel:
+        id:texts_color_change_tow
+        pos:103,13
+        text:"Please Enter user and pass"
+        font_size:15
+    MyButton: 
+        on_press:app.see(self)  
+
+    MyLabel:
+        id:count
+        pos:10,-17
+        text:"0"
+        font_size:15
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MYGridLayout:
+     
+#     MyBoxLayout:
+#         rows:3
+#         orientation: 'horizontal'
+
+#         MYCard:
+#             md_bg_color:1,0,0,1
+#             # cols:2
+#             orientation: 'vertical'
+#             MyButton:
+#             MyButton:
+#             MyButton:
+#             MyButton:
+#             MyButton:
+#             MyButton:
+#         MYCard:
+#             md_bg_color:11,0,1,1
+#             orientation: 'vertical'
+#             MyLabel:            
+#             MyLabel:            
+#             MyLabel:            
+#             MyLabel:            
+#         MYCard:
+#             md_bg_color:0,11,0,1
+            
+              
+            
+#     MyBoxLayout:
+#         rows:3
+#         orientation: 'horizontal'
+#         MYCard:
+#             md_bg_color:1,0,11,1
+#         MYCard:
+#             md_bg_color:1,10,0,1
+#         MYCard:
+#             md_bg_color:1,0,11,1
+#     MyBoxLayout:
+#         rows:3
+#         orientation: 'horizontal'
+#         MYCard:
+#             md_bg_color:0,1,0,1
+
+#         MYCard:
+#             md_bg_color:0,0,1,1
+
+#         MYCard:
+#             md_bg_color:11,0,1,1
+
+
+        
+
+# GridLayout:
+        
+#     MyBoxLayout:
+#         MYCard:
+#             md_bg_color:17,0,0,1 
+            
+#             MYImage:
+#                 source:"img/mo3.png"
+#             MyLabel:
+#                 text:"developer"
+#                 color:1,11,5,60
+#         MYCard:
+#             md_bg_color:22,0,1,1 
+
+#             MYImage:
+#                 source:"img/mo.png"
+#             MyLabel: 
+#                 text:"programmer"
+#                 color:15,1,53,6
+
+                
+#         MYCard:
+#             md_bg_color:2,33,0,1 
+             
+#             MYImage:
+#                 source:"img/mo2.png"
+#             MyLabel: 
+#                 text:"desinger"
+#                 color:57,1,0,6
+
+                
+        # rows:3
+        # orientation: 'vertical'
+        # BoxLayout:
+        #     MYCard: 
+        #         MYImage:
+        #         MyLabel:
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# GridLayout:
+#     cols:2
+#     rows:3
+#     BoxLayout:
+#         rows:2
+#         orientation: 'horizontal' 
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+#     BoxLayout:
+#         rows:2
+#         orientation: 'vertical'
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#     BoxLayout:
+#         rows:2
+#         orientation: 'vertical'
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+#         Button:
+#             text: "text"
+#             color:
+     
+
+# GridLayout:
+#     cols:20
+#     # orientation: 'horizontal'
+#     BoxLayout:
+#         orientation: 'vertical'
+     
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+                
+#     BoxLayout:
+#         orientation: 'vertical'
+     
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+                
+
+
+
+
+
+                
+#     BoxLayout:
+#         orientation: 'vertical'
+     
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+                
+
+
+
+
+
+                
+#     BoxLayout:
+#         orientation: 'vertical'
+     
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+#         BoxLayout:
+#             Image:
+#                 source: "img/mo.png"
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MyBoxLayout:
+
+#     MYImage:
+    
+#         MYCard:
+            
+#             MyLabel:
+#             MyLabel:
+#                 text:"sadegh saber"
+#                 font_size:15
+#                 color:1,0,0,1
+#                 bold:True    
+#                 font_name: 'font/COOPBL.TTF'
+#             MyButton:
+# GridLayout:
+    
+#     rows:3
+#     BoxLayout:
+#         orientation: 'horizontal'
+#         rows:2
+#         BoxLayout:
+#             orientation: 'vertical'
+#             cols:2
+    
+#             Button:
+#                 text:"btn1"      
+#                 background_color:1,0,0,1      
+#             Button:
+#                 text:"btn1"     
+#                 background_color:1,0,0,1       
+#             Button:
+#                 text:"btn1"     
+#                 background_color:1,0,0,1       
+#             Button:
+#                 text:"btn1" 
+#                 background_color:1,0,0,1
+#         Button:
+#             text:"btn1"       
+#             background_color:0,1,0,1     
+#         Button:
+#             text:"btn1"       
+#             background_color:0,1,0,1     
+#         Button:
+#             text:"btn1"       
+#             background_color:0,1,0,1     
+#         Button:
+#             text:"btn1"    
+#             background_color:0,1,0,1
+#         BoxLayout:
+#             orientation: 'vertical'
+#             cols:2
+    
+#             Button:
+#                 text:"btn1"      
+#                 background_color:0,0,1,1      
+#             Button:
+#                 text:"btn1"      
+#                 background_color:0,0,1,1      
+#             Button:
+#                 text:"btn1"      
+#                 background_color:0,0,1,1      
+#             Button:
+#                 text:"btn1"      
+#                 background_color:0,0,1,1      
+                
+#     BoxLayout:
+#         orientation: 'horizontal'
+#         Button:
+#             text:"btn1"            
+#             background_color:1,11,9,1
+#         Button:
+#             text:"btn1"           
+#             background_color:1,11,9,1 
+#         Button:
+#             text:"btn1"           
+#             background_color:1,11,9,1 
+#         Button:
+#             text:"btn1"         
+#             background_color:1,11,9,1   
+#     BoxLayout:
+#         orientation: 'horizontal'
+#         rows:2
+#         BoxLayout:
+#             orientation: 'vertical'
+#             cols:2
+    
+#             Button:
+#                 text:"btn1"            
+#                 background_color:9,5,5,5
+#             Button:
+#                 text:"btn1"            
+#                 background_color:9,5,5,5
+#             Button:
+#                 text:"btn1"            
+#                 background_color:9,5,5,5
+#             Button:
+#                 text:"btn1"  
+#                 background_color:9,5,5,5
+#         Button:
+#             text:"btn1"         
+#             background_color:9,0,0,1   
+#         Button:
+#             text:"btn1"        
+#             background_color:9,0,0,1    
+#         Button:
+#             text:"btn1"         
+#             background_color:9,0,0,1   
+#         Button:
+#             text:"btn1"          
+#             background_color:9,0,0,1  
+#         BoxLayout:
+#             orientation: 'vertical'
+#             cols:2
+    
+#             Button:
+#                 text:"btn1"            
+#             Button:
+#                 text:"btn1"            
+#             Button:
+#                 text:"btn1"            
+#             Button:
+#                 text:"btn1"     
+
+                
+
+
+
+
+
+
+
+
+
+
+
